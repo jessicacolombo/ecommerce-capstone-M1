@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeekStore</title>
+    <meta name="description" content="descrição da página">
+    <link rel="icon" href="https://kenzie.com.br/favicon.jpeg" />
+    <script defer type="text/javascript" src="./js/database.js"></script>
+    <script defer type="text/javascript" src="./js/index.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <nav class="menu">
+        <div class="container">
+            <h1 class="logo">GeekStore</h1>
+            <ul class="menu-setores">
+                <li><a id="todos">Todos</a></li>
+                <li><a id="canecas">Canecas</a></li>
+                <li><a id="action-figures">Action-Figures</a></li>
+                <li><a id="decoracoes">Decorações</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main class="container">
+        <section class="vitrine">
+            <ul id="lista-vitrine">
+
+            </ul>
+        </section>
+        <section class="carrinho-pesquisa">
+            <div class="pesquisa">
+                <input type="text" id="busca" name="search" placeholder="Digite aqui a sua pesquisa">
+                <button type="submit" id="buscar">Pesquisar</button>
+            </div>
+            <div class="carrinho" hidden>
+                <h1>Carrinho de Compras</h1>
+                <div class="secao" >
+                    <ul class="lista-carrinho">
+                        
+                    </ul> 
+                </div>
+                <div class="info-qtd">
+                    <p>quantidade:</p>
+                    <p id="info-qtd"></p>
+                </div>
+                <div class="info-valor">
+                    <p>total:</p>
+                    <p id="info-valor">R$0,00</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
